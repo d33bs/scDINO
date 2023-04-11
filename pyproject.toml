@@ -1,0 +1,32 @@
+[tool.poetry]
+name = "scdino"
+version = "0.1.0"
+description = ""
+authors = ["Your Name <you@example.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = ">=3.8,<3.11"
+catalyst = "22.4"
+imageio = "2.16.1"
+matplotlib = "3.5.1"
+numpy = "1.21.5"
+opencv-python = "4.5.5.64"
+pandas = "1.5.0"
+pillow = "9.4.0"
+pyyaml = "6.0"
+scikit-image = "0.19.2"
+scikit-learn = "1.2.1"
+seaborn = "0.12.2"
+tifffile = "2021.11.2"
+topo = "0.1.1"
+topometry = "0.1.1.0"
+torch = "1.8.1"
+torchvision = "0.9.1"
+umap-learn = "0.5.3"
+snakemake = "7.20.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
