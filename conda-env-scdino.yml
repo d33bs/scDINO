@@ -1,0 +1,27 @@
+name: scdinoenv
+
+channels:
+- conda-forge
+
+dependencies:
+  - python=3.9
+  - imageio
+  - matplotlib
+  - numpy
+  - pandas
+  - Pillow
+  - PyYAML
+  - seaborn
+  - tifffile
+  - torchvision
+  - pip
+  - pip:
+    - topo
+    - scikit_learn
+    - topometry
+    - catalyst
+    - snakemake
+    - torch==1.8.1
+    - scikit_image
+    - umap_learn
+    - opencv_python
