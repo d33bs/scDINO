@@ -1,7 +1,7 @@
 meta:
   name_of_run: "name_of_run"
-  output_dir: "outputdir"
-  dataset_dir: "datasetdir"
+  output_dir: "output"
+  dataset_dir: "./notebooks/data/DeepPhenotype_PBMC_ImageSet_YSeverin"
   folder_depth_for_labels: 0 # 0 is the folder where the images are, 1 is the folder above, etc.
   test_datasetsplit_fraction: 0.1
   seed: 40 #should match scDINO seed if you want to use the same train/test split
@@ -15,13 +15,13 @@ compute_cls_features:
   num_samples: 5000 # only used if use_weighted_sampler is True
   normalize: True
   parse_mean_std_from_file: True
-  mean_std_file_location: "dir/mean_and_std_of_dataset.txt"
+  mean_std_file_location: "./notebooks/data/DeepPhenotype_PBMC_ImageSet_YSeverin.Test.mean_and_std.json"
   norm_per_channel: "[(x,x,x,x,x)(x,x,x,x,x)]" #only used if parse_mean_std_from_file is False
   use_cuda: True
   num_gpus: 1
   batch_size_per_gpu: 24
   num_workers: 8
-  pretrained_weights: "dir_to_pretrained_weights"
+  pretrained_weights: "./notebooks/data"
   read_model_arch_dynamically: False
   arch: "vit_small" #only used if read_model_arch_dynamically is False
   patch_size: 8 #only used if read_model_arch_dynamically is False
